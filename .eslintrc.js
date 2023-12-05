@@ -16,7 +16,8 @@ module.exports = {
     'airbnb/hooks',
   ],
   rules: {
-    'react/jsx-uses-react': 'error',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
     'no-param-reassign': [2, { props: false }],
     'react-hooks/rules-of-hooks': 'error',
