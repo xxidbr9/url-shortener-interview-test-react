@@ -17,7 +17,7 @@ module.exports = {
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-uses-react': 'off',
+    'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'no-param-reassign': [2, { props: false }],
     'react-hooks/rules-of-hooks': 'error',
