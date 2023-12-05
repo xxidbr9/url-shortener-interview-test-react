@@ -1,0 +1,8 @@
+{
+  "name": "url-shortener-interview-test-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xxidbr9/url-shortener-interview-test-react",
+  "author": "Barnando Akbarto Hidayatullah <barnando13@gmail.com>",
+  "license": "MIT"
+}
