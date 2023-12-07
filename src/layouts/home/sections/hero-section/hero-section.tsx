@@ -1,4 +1,4 @@
-import IllustrationWorking from '@/assets/svg/misc/ilustration-working.svg';
+import { IllustrationWorkingSvg } from '@/assets/svg/misc';
 import { Button } from '@/components/ui';
 
 export const HeroSection = () => (
@@ -17,7 +17,7 @@ export const HeroSection = () => (
         <Button>Get Started</Button>
       </div>
       <div className="lg:block absolute lg:right-0 lg:-mr-60 lg:top-[29px] top-0 z-0 -ml-16">
-        <IllustrationWorking className="h-[260px] lg:h-auto" />
+        <IllustrationWorkingSvg className="h-[260px] lg:h-auto" />
       </div>
       <div className="w-full h-[260px]" />
     </div>

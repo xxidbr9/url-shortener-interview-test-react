@@ -5,6 +5,7 @@
 
 const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
 const NodePolyfill = require('@rspack/plugin-node-polyfill');
+const rspack = require('@rspack/core');
 const path = require('path');
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -23,14 +24,13 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : 'hidden-source-map',
   mode: isDev ? 'development' : 'production',
-  plugins: [isDev && new ReactRefreshPlugin(), new NodePolyfill()].filter(Boolean),
-  builtins: {
-    html: [
-      {
-        template: './public/index.html'
-      }
-    ]
-  },
+  plugins: [
+    isDev && new ReactRefreshPlugin(),
+    new NodePolyfill(),
+    new rspack.HtmlRspackPlugin({
+      template: './public/index.html'
+    })
+  ].filter(Boolean),
   resolve: {
     tsConfigPath: path.resolve(__dirname, 'tsconfig.json')
   },

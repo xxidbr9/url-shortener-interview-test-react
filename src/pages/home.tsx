@@ -1,5 +1,5 @@
 import { HomeLayout } from '@/layouts/home/home.layout';
 
-const HomePage = () => <HomeLayout />;
+// const HomePage = () => <HomeLayout />;
 
-export default HomePage;
+export default HomeLayout;
